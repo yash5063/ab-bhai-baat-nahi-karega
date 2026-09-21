@@ -7,15 +7,18 @@
     content="width=device-width, initial-scale=1.0, viewport-fit=cover"
   />
 
-  <meta name="theme-color" content="#11110f" />
+  <title>Ab Bhai Baat Nahi Karega 😤</title>
 
-  <title>Ab Bhai Baat Nahi Karega</title>
+  <meta
+    name="description"
+    content="A little brother-sister conversation."
+  />
 
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
   <link
-    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Playfair+Display:wght@500;600&display=swap"
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
     rel="stylesheet"
   />
 
@@ -24,17 +27,454 @@
 
 <body>
 
-  <main id="app">
+  <div class="page">
 
-    <div class="grain"></div>
-
-    <div class="ambient ambient-a"></div>
-    <div class="ambient ambient-b"></div>
-
-    <!-- TOP BAR -->
     <header class="topbar">
-      <span class="brand">AB BHAI BAAT NAHI KAREGA</span>
-      <span class="counter" id="counter">01 / 08</span>
+      <div class="brand">
+        AB BHAI BAAT NAHI KAREGA
+      </div>
+
+      <div class="counter">
+        <span id="currentNumber">01</span>
+        <span class="slash">/</span>
+        <span>08</span>
+      </div>
+    </header>
+
+    <div class="progress">
+      <div id="progressBar"></div>
+    </div>
+
+
+    <main id="experience">
+
+
+      <!-- =========================
+           SCENE 1
+      ========================== -->
+
+      <section class="scene active">
+
+        <div class="scene-inner">
+
+          <span class="eyebrow">
+            Oye behen...
+          </span>
+
+          <h1>
+            2 minute<br>
+            idhar aa.
+          </h1>
+
+          <p class="subtext">
+            Haan haan, bas 2 minute.<br>
+            Bhaagna mat. 👀
+          </p>
+
+          <button class="primary-btn next">
+            Kya hua bhai?
+            <span>→</span>
+          </button>
+
+        </div>
+
+      </section>
+
+
+      <!-- =========================
+           SCENE 2
+      ========================== -->
+
+      <section class="scene">
+
+        <div class="scene-inner">
+
+          <span class="eyebrow orange">
+            Complaint department 😤
+          </span>
+
+          <div class="chat">
+
+            <div class="message brother">
+              <small>Bhai</small>
+              <div>Kal message kiya tha.</div>
+            </div>
+
+            <div class="message sister">
+              <small>Behen</small>
+              <div>Toh?</div>
+            </div>
+
+            <div class="message brother">
+              <small>Bhai</small>
+              <div>Toh reply?</div>
+            </div>
+
+            <div class="message sister">
+              <small>Behen</small>
+              <div>Busy thi.</div>
+            </div>
+
+            <div class="message brother">
+              <small>Bhai</small>
+              <div>24 ghante? 😐</div>
+            </div>
+
+            <div class="message sister">
+              <small>Behen</small>
+              <div>Haan. Important thi main. 😌</div>
+            </div>
+
+            <div class="message brother final-chat">
+              <small>Bhai</small>
+              <div>
+                Wah.<br>
+                Matlab bhai se zyada important kaam.
+              </div>
+            </div>
+
+          </div>
+
+          <button class="primary-btn next">
+            Aage kya hua?
+            <span>→</span>
+          </button>
+
+        </div>
+
+      </section>
+
+
+      <!-- =========================
+           SCENE 3
+      ========================== -->
+
+      <section class="scene">
+
+        <div class="scene-inner game-scene">
+
+          <span class="eyebrow orange">
+            Chal ek game khel. 🎮
+          </span>
+
+          <h2>
+            Dekhte hain...<br>
+            behen bhai ko<br>
+            kitna jaanti hai.
+          </h2>
+
+          <div class="question-card">
+
+            <div class="question-count">
+              QUESTION 01
+            </div>
+
+            <p>
+              Bhai ka favourite excuse?
+            </p>
+
+            <div class="options">
+
+              <button class="option">
+                “5 minute mein aata hoon”
+              </button>
+
+              <button class="option">
+                “Mujhe kya pata”
+              </button>
+
+              <button class="option">
+                “Paise nahi hain” 😂
+              </button>
+
+            </div>
+
+          </div>
+
+          <div id="gameResult" class="game-result">
+            Hmm... soch ke jawab dena. 👀
+          </div>
+
+        </div>
+
+      </section>
+
+
+      <!-- =========================
+           SCENE 4
+      ========================== -->
+
+      <section class="scene">
+
+        <div class="scene-inner punishment-scene">
+
+          <span class="eyebrow orange">
+            Result aa gaya. 😈
+          </span>
+
+          <div class="score">
+
+            <span class="score-small">
+              BHAI TUMSE DISAPPOINTED HAI
+            </span>
+
+            <strong>
+              72%
+            </strong>
+
+            <span>
+              😤
+            </span>
+
+          </div>
+
+          <h2>
+            Game haar gayi.
+          </h2>
+
+          <p class="subtext">
+            Ab punishment choose kar.
+          </p>
+
+          <div class="punishments">
+
+            <button class="punishment">
+              <span>01</span>
+              Bhai ko ek random meme bhejna.
+            </button>
+
+            <button class="punishment">
+              <span>02</span>
+              Khud message karke bolna — “Bhai kya kar raha hai?”
+            </button>
+
+            <button class="punishment">
+              <span>03</span>
+              Bhai ko chai / pizza treat deni padegi. 🍕
+            </button>
+
+          </div>
+
+          <div id="punishmentResult" class="punishment-result">
+            Ek choose kar... bhaag nahi sakti. 😌
+          </div>
+
+        </div>
+
+      </section>
+
+
+      <!-- =========================
+           SCENE 5
+      ========================== -->
+
+      <section class="scene">
+
+        <div class="scene-inner">
+
+          <span class="eyebrow orange">
+            Waise ek baat bata...
+          </span>
+
+          <div class="ego-chat">
+
+            <div class="ego-line brother-line">
+              Agar main message na karu toh?
+            </div>
+
+            <div class="ego-line sister-line">
+              Toh main bhi nahi karungi.
+            </div>
+
+            <div class="ego-line brother-line">
+              Accha.
+            </div>
+
+            <div class="ego-line sister-line">
+              Accha.
+            </div>
+
+          </div>
+
+          <div class="silence">
+            ...
+          </div>
+
+          <h2 class="small-heading">
+            Dono ego mein reh lenge. 😂
+          </h2>
+
+          <button class="primary-btn next">
+            Sach bol bhai...
+            <span>→</span>
+          </button>
+
+        </div>
+
+      </section>
+
+
+      <!-- =========================
+           SCENE 6
+      ========================== -->
+
+      <section class="scene">
+
+        <div class="scene-inner">
+
+          <span class="eyebrow">
+            Theek hai. 😤
+          </span>
+
+          <h2>
+            Ab bhai bhi<br>
+            message nahi karega.
+          </h2>
+
+          <div class="attitude-card">
+
+            <div>
+              Nahi poochega —
+              <strong>“Kya hua?”</strong>
+            </div>
+
+            <div>
+              Nahi bolega —
+              <strong>“Reply kyun nahi karti?”</strong>
+            </div>
+
+            <div>
+              Nahi karega —
+              <strong>“Disturb.”</strong>
+            </div>
+
+          </div>
+
+          <p class="subtext">
+            Tune hi toh chup rehna sikhaya hai. 😤
+          </p>
+
+          <button class="primary-btn next">
+            Haan haan...
+            <span>→</span>
+          </button>
+
+        </div>
+
+      </section>
+
+
+      <!-- =========================
+           SCENE 7
+      ========================== -->
+
+      <section class="scene emotional">
+
+        <div class="scene-inner">
+
+          <span class="eyebrow orange">
+            Lekin ek baat hai...
+          </span>
+
+          <h2>
+            Ye saari nok-jhok<br>
+            toh chalti rahegi.
+          </h2>
+
+          <div class="emotional-divider">
+            <span></span>
+          </div>
+
+          <p class="emotional-text">
+            Par jab tera message nahi aata na...
+          </p>
+
+          <p class="emotional-text muted">
+            Bhai actually phone check karta hai.
+          </p>
+
+          <div class="checks">
+            <span>Ek baar.</span>
+            <span>Phir thodi der baad.</span>
+            <span>Phir bina reason ke.</span>
+          </div>
+
+          <button class="primary-btn next">
+            Last baat...
+            <span>→</span>
+          </button>
+
+        </div>
+
+      </section>
+
+
+      <!-- =========================
+           SCENE 8
+      ========================== -->
+
+      <section class="scene final">
+
+        <div class="scene-inner">
+
+          <span class="eyebrow orange">
+            Sach mein.
+          </span>
+
+          <h2>
+            Tu shayad notice<br>
+            bhi nahi karti...
+          </h2>
+
+          <p class="final-feeling">
+            Par bhai tere message<br>
+            ka wait karta hai.
+          </p>
+
+          <div class="final-box">
+
+            <p>
+              Isliye agar kabhi lage ki bhai
+              unnecessarily naraz hai...
+            </p>
+
+            <div class="message-example">
+              Bhai kya kar raha hai?
+            </div>
+
+            <p class="tiny">
+              Itna kaafi hai. 🧡
+            </p>
+
+          </div>
+
+          <div class="final-callback">
+            Aur haan...<br>
+            aaj ki punishment abhi bhi pending hai. 😤
+          </div>
+
+          <button class="primary-btn restart">
+            Theek hai bhai 😂
+            <span>↻</span>
+          </button>
+
+        </div>
+
+      </section>
+
+    </main>
+
+
+    <div class="swipe-hint">
+      Swipe to continue
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>      <span class="counter" id="counter">01 / 08</span>
     </header>
 
     <div class="progress">
